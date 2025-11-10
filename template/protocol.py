@@ -19,7 +19,7 @@
 
 import typing
 import bittensor as bt
-
+import time
 # TODO(developer): Rewrite with your protocol definition.
 
 # This is the protocol for the dummy miner and validator.
@@ -40,7 +40,7 @@ import bittensor as bt
 #   assert dummy_output == 2
 
 
-class Dummy(bt.Synapse):
+class ReversePrompt(bt.Synapse):
     """
     A simple dummy protocol representation which uses bt.Synapse as its base.
     This protocol helps in handling dummy request and response communication between
@@ -52,12 +52,13 @@ class Dummy(bt.Synapse):
     """
 
     # Required request input, filled by sending dendrite caller.
-    dummy_input: int
-
+    # prompt: str
+    path_to_image:str
     # Optional request output, filled by receiving axon.
-    dummy_output: typing.Optional[int] = None
-
-    def deserialize(self) -> int:
+    output: typing.Optional[str] = None
+    # time: time.time()
+    
+    def deserialize(self) -> str:
         """
         Deserialize the dummy output. This method retrieves the response from
         the miner in the form of dummy_output, deserializes it and returns it
@@ -73,4 +74,4 @@ class Dummy(bt.Synapse):
         >>> dummy_instance.deserialize()
         5
         """
-        return self.dummy_output
+        return self.output
