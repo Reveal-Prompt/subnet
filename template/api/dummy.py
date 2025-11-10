@@ -19,7 +19,7 @@
 
 import bittensor as bt
 from typing import List, Optional, Union, Any, Dict
-from template.protocol import Dummy
+from template.protocol import ReversePrompt
 from bittensor.subnets import SubnetsAPI
 
 
