@@ -36,3 +36,6 @@ The reward mechanism scores miners based on the accuracy and completeness of rev
 - Confirm that miners are revealing prompts accurately by testing whether revealed prompts reproduce the original outputs
 - Score results from miners based on performance metrics such as prompt accuracy, output reproducibility, completeness, and response time
 
+## 🧩 Prerequisites
+
+See the full setup guide here → [Setup Instructions](SETUP.md)
