@@ -92,3 +92,7 @@ This metric assesses design quality and effectiveness, rewarding **precision** a
 * **Visual Metaphor Interpretation (20%):** Correctly describing the abstract or metaphorical meaning of the design.
 
 The validator assesses the subnet's ability to accurately identify and interpret both **explicit design attributes** and their **underlying semantic meaning** from design images.
+
+## 🧩 Prerequisites and Installation
+
+See the full setup guide here → [Setup Instructions](SETUP.md)
